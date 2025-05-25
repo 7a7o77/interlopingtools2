@@ -28,11 +28,14 @@ for t in range(30):
     print()
 
 def DownloadView():
+        Root.mkdir(parents=True,exist_ok=True);
         print(Format("Trying...","\033[1A\033[2K"))
         Folders = []
         for name in os.listdir(Root):
             if os.path.isdir(Path(Root,name)) and name.isdigit():
                 Folders.insert(int(name),name)       
+        if Folders == []:
+            Folders = ["0"]
         LatestFolder = Path(Root,Folders[len(Folders) - 1])
         LastestView = Path(LatestFolder,"view.vtf")
 

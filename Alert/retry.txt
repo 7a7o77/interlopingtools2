@@ -1,4 +1,1 @@
-playercount=4/16
-map=view
-password=True
-time left=0:25:51
+Error: timed out (0)
