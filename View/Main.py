@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 Running = True
-Root = Path(__file__).resolve().parent
+Root = Path(Path(__file__).resolve().parent,"Views")
 print("\033[?25l", end="")
 
 def Format(string:str = "",before = "",end = ""):
@@ -30,11 +30,9 @@ for t in range(30):
 def DownloadView():
         print(Format("Trying...","\033[1A\033[2K"))
         Folders = []
-
-        for name in os.listdir('.'):
-            if os.path.isdir(name) and name.isdigit():
+        for name in os.listdir(Root):
+            if os.path.isdir(Path(Root,name)) and name.isdigit():
                 Folders.insert(int(name),name)       
-
         LatestFolder = Path(Root,Folders[len(Folders) - 1])
         LastestView = Path(LatestFolder,"view.vtf")
 

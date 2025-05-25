@@ -1,4 +1,4 @@
-playercount=2/16
+playercount=4/16
 map=view
 password=True
-time left=0:00:43
+time left=0:25:51
