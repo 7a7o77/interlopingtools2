@@ -4,7 +4,6 @@ import filecmp;
 from pathlib import Path;
 import os;
 import shutil;
-from PIL import Image
 import subprocess
 from vtf2img import Parser
 from datetime import datetime
@@ -25,6 +24,7 @@ soundlink = BaseLink+"sound/"
 
 ViewLink = materialslink + "view.vtf"
 ViewSoundLink = soundlink + "view.wav"
+
 for t in range(30):
     print()
 
@@ -83,6 +83,7 @@ try:
     while Running:
         DownloadView();
         time.sleep(1)
+
 except KeyboardInterrupt:
    print("\x1b[?25h",end="")
    Running = False
