@@ -1,1 +1,4 @@
-Error: timed out (0)
+playercount=2/16
+map=view
+password=True
+time left=0:20:59
