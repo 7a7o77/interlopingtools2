@@ -28,7 +28,7 @@ clock = pygame.time.Clock()
 
 ToDraw = []  # Store text to be drawn
 global retries
-timemode = 0
+timemode = 1
 retries = 0
 
 # Shared queue to communicate between threads

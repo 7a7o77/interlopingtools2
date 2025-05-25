@@ -5,7 +5,6 @@ from pathlib import Path;
 import os;
 import shutil;
 import subprocess
-from vtf2img import Parser
 from datetime import datetime
 
 
